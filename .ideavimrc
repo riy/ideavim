@@ -1,6 +1,6 @@
 let mapleader = " "
-set nu rnu
-set clipboard=unnamedplus
+" set nu rnu
+" set clipboard=unnamedplus
 
 " #### Search #####
 set ignorecase
@@ -24,6 +24,8 @@ nnoremap y_ y^
 nnoremap <leader>. @:
 nnoremap <Leader>sr :%s///gcI<left><left><left><left><left>
 vnoremap <Leader>sr y:%s///gcI<left><left><left><left><left><C-r>0<right>
+vnoremap <Leader>fs y/<C-r>0<CR>
+nnoremap <Leader><space> :noh<cr>
 
 " #### Maps Actions ####
 nnoremap <Leader>fs :action FileStructurePopup<CR>
